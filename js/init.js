@@ -11,17 +11,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     var instance = M.Carousel.init(document.querySelectorAll('.carousel'), {
-        fullWidth: true,
-        indicators: true,
-
-        /*dist: 0,
+        dist: 0,
         padding: 0,
         fullWidth: true,
         indicators: true,
         noWrap: false,
         duration: 200,
         numVisible: 1,
-        shift: 0,*/
+        shift: 0,
     });
 
     elems = document.querySelectorAll('.autocomplete');
