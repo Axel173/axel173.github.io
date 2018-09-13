@@ -1,0 +1,26 @@
+nav ul a,
+nav .brand-logo{color:#444;}
+p{line-height:2rem;}
+.sidenav-trigger{color:#26a69a;}
+.parallax-container{min-height:680px;line-height:0;height:auto;color:rgba(255,255,255,.9);}
+.parallax-container .section{width:100%;}
+@media only screen and (max-width:600px){#index-banner .section{top:0;}
+}
+.icon-block{padding:0 15px;}
+.icon-block .material-icons{font-size:inherit;}
+footer.page-footer{margin:0;}
+.mb10{margin-bottom:10px !important;}
+.mt20{margin-top:20px !important;}
+.clm{margin:0 !important;}
+.input-field input[type="search"]:focus:not(.browser-default){color: black !important;}
+.nav-search{width: 450px !important;}
+/*.carousel {min-height: 900px;}*/
+.h-init {height: initial !important;}
+.collapsible li ul {padding-left: 5px;}
+.btn-not-fixed{
+    position: absolute;
+    right: 5px;
+    bottom: -30px;
+}
+.card-image{height: 200px; justify-content: center;}
+.card-image img {    width: auto !important;;    height: initial !important;;    display: inline-block !important;}
