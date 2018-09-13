@@ -44,6 +44,10 @@ document.addEventListener('DOMContentLoaded', function () {
             //edge: 'right'
         });
 
+    var elems = document.querySelectorAll('.tap-target');
+    var instances = M.TapTarget.init(elems, {
+
+    });
 
 
 

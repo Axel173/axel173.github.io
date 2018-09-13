@@ -672,13 +672,13 @@
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
-                <h5 class="white-text">ElShop</h5>
+                <h5 class="white-text">El-Shop</h5>
                 <p class="grey-text text-lighten-4">Какой нибудь крутой текст</p>
             </div>
             <div class="col l3 s12">
                 <h5 class="white-text">Меню</h5>
                 <ul>
-                    <li><a class="white-text" href="#">Ебаный рот</a></li>
+                    <li><a class="white-text" href="#">El-Shop</a></li>
                     <!--<li><a class="white-text" href="#">Список мест</a></li>
                     <li><a class="white-text" href="#">Рейтинги</a></li>
                     <li><a class="white-text" href="#">О нас</a></li>
@@ -688,19 +688,20 @@
         </div>
         <div class="footer-copyright">
             <div class="container">
-                Made for <a class="brown-text text-lighten-3" href="http://ff.com">FindPlace</a>
+                Made for <a class="brown-text text-lighten-3" href="http://ff.com">El-Shop</a>
             </div>
         </div>
     </div>
 </footer>
-<!-- Element Showed -->
+
+
 
 
 <!-- Tap Target Structure -->
 
 <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 <!--  Scripts-->
-<!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
 
 <!-- Compiled and minified JavaScript -->
@@ -708,7 +709,42 @@
 
 <script src="js/init.js"></script>
 
+<!-- Element Showed -->
+<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    <a id="menu" class="btn btn-floating btn-large red darken-4" onclick="$('.tap-target').tapTarget('open')">
+        <i class="material-icons">chat_bubble</i>
+    </a>
+</div>
 
+<div class="tap-target-wrapper"><div class="tap-target red darken-4" data-target="menu">
+    <div class="tap-target-content white-text center">
+
+        <h5>Связаться с нами</h5>
+        <!--<p class="white-text">Provide value and encourage return visits by introducing users to new features and functionality at contextually
+            relevant moments.</p>-->
+        <form class="container">
+            <div class="input-field white-text">
+                <input id="email" type="email" class="validate white-text">
+                <label for="email" class="white-text">Email</label>
+            </div>
+            <div class="input-field white-text">
+                <textarea id="textarea" class="materialize-textarea white-text"></textarea>
+                <label for="textarea" class="white-text">Сообщение</label>
+            </div>
+
+            <div class="row center white-text">
+                <!-- <input class="waves-effect waves-light btn-large center" value="Войти" type="submit">-->
+
+                <button class="btn waves-effect waves-light red darken-4" type="submit" name="action">Отправить
+                </button>
+            </div>
+
+
+        </form>
+    </div>
+</div><div class="tap-target-wave"><a class="btn btn-floating btn-large cyan tap-target-origin">
+    <i class="material-icons">chat_bubble</i>
+</a></div></div>
 
 </body>
 </html>
