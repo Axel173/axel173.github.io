@@ -21,6 +21,15 @@ document.addEventListener('DOMContentLoaded', function () {
         shift: 0,
     });
 
+    setTimeout(autoplay, 4500);
+
+    function autoplay() {
+        instanceee = M.Carousel.getInstance(document.querySelectorAll('.carousel')[0]);
+
+        instanceee.next();
+        setTimeout(autoplay, 4500);
+    }
+
     elems = document.querySelectorAll('.autocomplete');
     instances = M.Autocomplete.init(elems, {
         data: {
@@ -77,18 +86,4 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-
-
-
-
-
-
-    setTimeout(autoplay, 4500);
-
-    function autoplay() {
-        instanceee = M.Carousel.getInstance(document.querySelectorAll('.carousel')[0]);
-
-        instanceee.next();
-        setTimeout(autoplay, 4500);
-    }
 });
