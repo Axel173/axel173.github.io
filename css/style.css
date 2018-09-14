@@ -21,6 +21,7 @@ footer.page-footer{margin:0;}
     position: absolute;
     right: 5px;
     bottom: -30px;
+    z-index: inherit;
 }
 .card-image{height: 200px; justify-content: center;}
 .card-image img {    width: auto !important;;    height: initial !important;;    display: inline-block !important;}

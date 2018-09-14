@@ -47,6 +47,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
+    elems.onclick = function() { // перезапишет существующий обработчик
+        var instance = M.TapTarget.getInstance(elems);
+
+        instance.open();
+    };
+
 
     setTimeout(autoplay, 4500);
 
