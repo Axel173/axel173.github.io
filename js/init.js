@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
         /*toolbarEnabled: true,*/
         hoverEnabled: false
     });
+
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems,
         {
