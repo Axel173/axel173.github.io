@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
             "Google": 'https://placehold.it/250x250'
         }
     });*/
-    var instance = M.Autocomplete.getInstance(document.querySelectorAll('.autocomplete')[0]);
+    /*var instance = M.Autocomplete.getInstance(document.querySelectorAll('.autocomplete')[0]);
     instance.updateData({
         "Apple": null,
         "Microsoft": null,
         "Google": 'https://placehold.it/250x250'
-    });
+    });*/
 
     M.Tabs.init('.tabs', {
 
