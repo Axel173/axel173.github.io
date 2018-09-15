@@ -25,3 +25,64 @@ footer.page-footer{margin:0;}
 }
 .card-image{height: 200px; justify-content: center;}
 .card-image img {    width: auto !important;;    height: initial !important;;    display: inline-block !important;}
+
+.right-menu .collapsible,
+.right-menu.fixed .collapsible {
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.right-menu .collapsible li,
+.right-menu.fixed .collapsible li {
+    padding: 0;
+}
+
+.right-menu .collapsible-header,
+.right-menu.fixed .collapsible-header {
+    background-color: transparent;
+    border: none;
+    line-height: inherit;
+    height: inherit;
+    padding: 0 16px;
+}
+
+.right-menu .collapsible-header:hover,
+.right-menu.fixed .collapsible-header:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.right-menu .collapsible-header i,
+.right-menu.fixed .collapsible-header i {
+    line-height: inherit;
+}
+
+.right-menu .collapsible-body,
+.right-menu.fixed .collapsible-body {
+    border: 0;
+    background-color: #fff;
+}
+
+.right-menu .collapsible-body li a,
+.right-menu.fixed .collapsible-body li a {
+    padding: 0 23.5px 0 31px;
+}
+
+.right-menu .collapsible-body > ul:not(.collapsible) > li.active
+ {
+    background-color: #ee6e73;
+}
+
+.right-menu .collapsible-body > ul:not(.collapsible) > li.active a
+{
+    color: #fff;
+}
+
+.right-menu .collapsible-body {
+    padding: 0;
+}
+.right-menu li
+{
+    float: none;
+    line-height: 48px;
+}
