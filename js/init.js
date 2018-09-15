@@ -21,6 +21,15 @@ document.addEventListener('DOMContentLoaded', function () {
         shift: 0,
     });
 
+    setTimeout(autoplay, 4500);
+
+    function autoplay() {
+        instanceee = M.Carousel.getInstance(document.querySelectorAll('.carousel')[0]);
+
+        instanceee.next();
+        setTimeout(autoplay, 4500);
+    }
+
     elems = document.querySelectorAll('.autocomplete');
     instances = M.Autocomplete.init(elems, {
         data: {
@@ -31,35 +40,50 @@ document.addEventListener('DOMContentLoaded', function () {
         minLength: 3,
     });
 
-    var elems = document.querySelectorAll('.action-btn');
+    var elems = document.querySelectorAll('.fixed-action-btn');
+
     var instances = M.FloatingActionButton.init(elems, {
-        toolbarEnabled: true
+        /*toolbarEnabled: true,*/
+        hoverEnabled: false
     });
+
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems,
         {
             //edge: 'right'
         });
 
-    var elems = document.querySelectorAll('.tap-target');
-    var instances = M.TapTarget.init(elems, {
+
+   /* var tap_target = document.querySelectorAll('.tap-target');
+    console.log(tap_target);
+
+    var instances = M.TapTarget.init(tap_target, {
 
     });
+    //console.log(instances);
 
 
-    elems.onclick = function() { // перезапишет существующий обработчик
-        var instance = M.TapTarget.getInstance(elems);
+    var instance = M.TapTarget.getInstance(tap_target[0]);
+    //console.log(instance);
+    /!*
+    instance.open();*!/
+
+    elems = document.querySelectorAll('.test');
+    var index, button;
+
+    for (index = 0; index < elems.length; index++) {
+        button = elems[index];
+        //button.addEventListener('click', clickHandler);
+        /!*button.addEventListener('dblclick', doubleClickHandler);*!/
+    }
+
+    function clickHandler(event) {
+        //console.log('клик');
 
         instance.open();
-    };
+        //console.log(instance);
+        event.preventDefault();
+    }*/
 
 
-    setTimeout(autoplay, 4500);
-
-    function autoplay() {
-        instanceee = M.Carousel.getInstance(document.querySelectorAll('.carousel')[0]);
-
-        instanceee.next();
-        setTimeout(autoplay, 4500);
-    }
 });
