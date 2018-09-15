@@ -1,6 +1,22 @@
 document.addEventListener('DOMContentLoaded', function () {
     M.AutoInit();
 
+
+    /*elems23 = document.querySelectorAll('.autocomplete');
+    instances23 = M.Autocomplete.init(elems23, {
+        data: {
+            "Apple": null,
+            "Microsoft": null,
+            "Google": 'https://placehold.it/250x250'
+        }
+    });*/
+    var instance = M.Autocomplete.getInstance(document.querySelectorAll('.autocomplete')[0]);
+    instance.updateData({
+        "Apple": null,
+        "Microsoft": null,
+        "Google": 'https://placehold.it/250x250'
+    });
+
     M.Tabs.init('.tabs', {
 
     });
@@ -10,6 +26,8 @@ document.addEventListener('DOMContentLoaded', function () {
         constrainWidth: false
     });
 
+    var timeoutID = 0;
+    console.log('первый timeoutID ' + timeoutID);
     var instance = M.Carousel.init(document.querySelectorAll('.carousel'), {
         dist: 0,
         padding: 0,
@@ -19,26 +37,29 @@ document.addEventListener('DOMContentLoaded', function () {
         duration: 200,
         numVisible: 1,
         shift: 0,
+        onCycleTo: function () {
+            if(timeoutID != 0)
+            {
+                clearTimeout(timeoutID);
+                timeoutID = setTimeout(autoplay, 4500);
+
+            } else {
+                timeoutID = setTimeout(autoplay, 4500);
+            }
+
+
+        }
     });
 
-    setTimeout(autoplay, 4500);
 
     function autoplay() {
         instanceee = M.Carousel.getInstance(document.querySelectorAll('.carousel')[0]);
 
         instanceee.next();
-        setTimeout(autoplay, 4500);
+        timeoutID = setTimeout(autoplay, 4500);
     }
 
-    elems = document.querySelectorAll('.autocomplete');
-    instances = M.Autocomplete.init(elems, {
-        data: {
-            "Apple": null,
-            "Microsoft": null,
-            "Google": 'https://placehold.it/250x250'
-        },
-        minLength: 3,
-    });
+
 
     var elems = document.querySelectorAll('.fixed-action-btn');
 
