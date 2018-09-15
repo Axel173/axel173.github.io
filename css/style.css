@@ -86,3 +86,8 @@ footer.page-footer{margin:0;}
     float: none;
     line-height: 48px;
 }
+
+.redToast
+{
+    background-color: #B71C1C;
+}

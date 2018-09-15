@@ -1,10 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     M.AutoInit();
 
-    M.Tabs.init('.tabs', {
-
-    });
-
     var elems = document.querySelectorAll('.dropdown-trigger');
     var instances = M.Dropdown.init(elems, {
         constrainWidth: false
@@ -30,8 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
             } else {
                 timeoutID = setTimeout(autoplay, 4500);
             }
-
-
         }
     });
 
@@ -43,11 +37,11 @@ document.addEventListener('DOMContentLoaded', function () {
         timeoutID = setTimeout(autoplay, 4500);
     }
 
-    var elems = document.querySelectorAll('.fixed-action-btn');
+    /*var elems = document.querySelectorAll('.fixed-action-btn');
 
     var instances = M.FloatingActionButton.init(elems, {
-        /*toolbarEnabled: true,*/
+        /!*toolbarEnabled: true,*!/
         hoverEnabled: false
-    });
+    });*/
 
 });
