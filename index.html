@@ -13,14 +13,16 @@
 <body>
 
 <ul id="nav-mobile" class="sidenav">
-    <li><div class="user-view">
+    <li>
+        <div class="user-view">
             <div class="background">
                 <img src="images/office.jpg">
             </div>
             <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
             <a href="#name"><span class="white-text name">John Doe</span></a>
             <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-        </div></li>
+        </div>
+    </li>
 
     <div class="nav-wrapper">
         <form>
@@ -262,16 +264,16 @@
             <ul class="right hide-on-med-and-down center-align">
 
 
-            <li class="">
-                <a href="#" class="dropdown-trigger white-text" data-target="dropdown1"><i
-                        class="material-icons left">account_box</i>Авторизация</a>
+                <li class="">
+                    <a href="#" class="dropdown-trigger white-text" data-target="dropdown1"><i
+                            class="material-icons left">account_box</i>Авторизация</a>
 
-            </li>
+                </li>
 
-            <li><a href="#" class="white-text"><i class="material-icons left">shopping_cart</i>Корзина<span
-                    class="new badge red" data-badge-caption="">5</span></a></li>
+                <li><a href="#" class="white-text"><i class="material-icons left">shopping_cart</i>Корзина<span
+                        class="new badge red" data-badge-caption="">5</span></a></li>
 
-        </ul>
+            </ul>
 
             <ul class="right hide-on-large-only  center-align">
 
@@ -308,29 +310,534 @@
     </div>
 </div>
 
-<div class="row " id="app">
-    <div class="col xl3 l3 m4 hide-on-med-and-down right-menu">
+<div class="row container" id="app">
+
+    <div class="col xl9">
+
+        <nav class="white">
+            <div class="nav-wrapper">
+                <form>
+                    <div class="input-field">
+
+                        <input id="search" type="search" class="" required autocomplete="off">
+                        <label class="label-icon" for="search"><i class="material-icons black-text">search</i></label>
+                        <i class="material-icons">close</i>
+                        <!-- <label class="label-icon" for="search"><i class="material-icons prefix black-text">search</i></label>
+                         <input type="search" id="text" class="autocomplete" autocomplete="off">
+                         <i class="material-icons">close</i>-->
+
+                    </div>
+                </form>
+            </div>
+        </nav>
+
         <div class="section">
-            <h5><i class="material-icons left">
+        </div>
+        <div class="carousel carousel-slider center z-depth-2">
+
+            <div class="carousel-item white-text" href="#one!">
+                <img src="images/page2-parallax-img.jpg">
+            </div>
+            <div class="carousel-item white-text" href="#three!">
+                <img src="images/page2-parallax-img.jpg">
+            </div>
+            <div class="carousel-item white-text" href="#three!">
+                <img src="images/page2-parallax-img.jpg">
+            </div>
+            <div class="carousel-item white-text" href="#three!">
+                <img src="images/page2-parallax-img.jpg">
+            </div>
+        </div>
+
+        <div class="col s12">
+            <div class="section">
+                <div class="row center">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="col s12">
+            <div class="row">
+                <div class="col s12 xl4 l6 m6">
+                    <div class="card hoverable">
+                        <div class="card-image center-align valign-wrapper">
+                            <img src="images/ecdfbfbd335512d486d5c3cc419ae0f7f1449d0e8794e7a5e3b774c7d7a965be.jpg">
+                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
+
+                                <a class="btn-floating red" v-on:click="addToCart"><i
+                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
+                                <a class="btn-floating yellow darken-1"><i
+                                        class="material-icons waves-effect waves-light">favorite</i></a>
+
+
+                            </div>
+                            <!--<a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
+                                        class="material-icons">add_shopping_cart</i></a>
+                            <a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
+                                        class="material-icons">favorite</i></a>-->
+                        </div>
+                        <li class="divider" tabindex="-1"></li>
+                        <div class="card-content">
+                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
+                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
+                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
+                            <div><p>21 000 Р</p></div>
+                            <i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star_half</i><i class="material-icons yellow-text accent-2">star_border</i>
+
+                        </div>
+                        <!--<div class="card-action">
+
+                        </div>-->
+                    </div>
+                </div>
+                <div class="col s12 xl4 l6 m6">
+                    <div class="card hoverable">
+                        <div class="card-image center-align valign-wrapper">
+                            <img src="images/0dc9b2af17d9c12973e4c52fd41da32419f1736032d546f08823c8e1d6d6fc9a.jpg">
+                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
+
+                                <a class="btn-floating red" v-on:click="addToCart"><i
+                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
+                                <a class="btn-floating yellow darken-1"><i
+                                        class="material-icons waves-effect waves-light">favorite</i></a>
+
+
+                            </div>
+                        </div>
+                        <li class="divider" tabindex="-1"></li>
+                        <div class="card-content">
+                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
+                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
+                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
+                            <div><p>21 000 Р</p></div>
+                            <i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star_half</i><i class="material-icons yellow-text accent-2">star_border</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 xl4 l6 m6">
+                    <div class="card hoverable">
+                        <div class="card-image center-align valign-wrapper">
+                            <img src="images/1d353d6dd1b08327d5d598c07ee1e7be58e6ea6bd3b406f1bb93b45188220751.jpg">
+                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
+
+                                <a class="btn-floating red" v-on:click="addToCart"><i
+                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
+                                <a class="btn-floating yellow darken-1"><i
+                                        class="material-icons waves-effect waves-light">favorite</i></a>
+
+
+                            </div>
+                        </div>
+                        <li class="divider" tabindex="-1"></li>
+                        <div class="card-content">
+                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
+                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
+                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
+                            <div><p>21 000 Р</p></div>
+                            <i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star_half</i><i class="material-icons yellow-text accent-2">star_border</i>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 xl4 l6 m6">
+                    <div class="card hoverable">
+                        <div class="card-image center-align valign-wrapper">
+                            <img src="images/d3d37c739713da3e4af07dde87a70b005ed717cd2b5fbb8de81f36703f121cde.jpg">
+                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
+
+                                <a class="btn-floating red" v-on:click="addToCart"><i
+                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
+                                <a class="btn-floating yellow darken-1"><i
+                                        class="material-icons waves-effect waves-light">favorite</i></a>
+
+
+                            </div>
+                        </div>
+                        <li class="divider" tabindex="-1"></li>
+                        <div class="card-content">
+                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
+                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
+                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
+                            <div><p>21 000 Р</p></div>
+                            <i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star_half</i><i class="material-icons yellow-text accent-2">star_border</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 xl4 l6 m6">
+                    <div class="card hoverable">
+                        <div class="card-image center-align valign-wrapper">
+                            <img src="images/ecdfbfbd335512d486d5c3cc419ae0f7f1449d0e8794e7a5e3b774c7d7a965be.jpg">
+                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
+
+                                <a class="btn-floating red" v-on:click="addToCart"><i
+                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
+                                <a class="btn-floating yellow darken-1"><i
+                                        class="material-icons waves-effect waves-light">favorite</i></a>
+
+
+                            </div>
+                            <!--<a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
+                                        class="material-icons">add_shopping_cart</i></a>
+                            <a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
+                                        class="material-icons">favorite</i></a>-->
+                        </div>
+                        <li class="divider" tabindex="-1"></li>
+                        <div class="card-content">
+                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
+                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
+                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
+                            <div><p>21 000 Р</p></div>
+                            <i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star_half</i><i class="material-icons yellow-text accent-2">star_border</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 xl4 l6 m6">
+                    <div class="card hoverable">
+                        <div class="card-image center-align valign-wrapper">
+                            <img src="images/0dc9b2af17d9c12973e4c52fd41da32419f1736032d546f08823c8e1d6d6fc9a.jpg">
+                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
+
+                                <a class="btn-floating red" v-on:click="addToCart"><i
+                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
+                                <a class="btn-floating yellow darken-1"><i
+                                        class="material-icons waves-effect waves-light">favorite</i></a>
+
+
+                            </div>
+                        </div>
+                        <li class="divider" tabindex="-1"></li>
+                        <div class="card-content">
+                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
+                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
+                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
+                            <div><p>21 000 Р</p></div>
+                            <i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star_half</i><i class="material-icons yellow-text accent-2">star_border</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 xl4 l6 m6">
+                    <div class="card hoverable">
+                        <div class="card-image center-align valign-wrapper">
+                            <img src="images/1d353d6dd1b08327d5d598c07ee1e7be58e6ea6bd3b406f1bb93b45188220751.jpg">
+                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
+
+                                <a class="btn-floating red" v-on:click="addToCart"><i
+                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
+                                <a class="btn-floating yellow darken-1"><i
+                                        class="material-icons waves-effect waves-light">favorite</i></a>
+
+
+                            </div>
+                        </div>
+                        <li class="divider" tabindex="-1"></li>
+                        <div class="card-content">
+                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
+                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
+                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
+                            <div><p>21 000 Р</p></div>
+                            <i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star_half</i><i class="material-icons yellow-text accent-2">star_border</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 xl4 l6 m6">
+                    <div class="card hoverable">
+                        <div class="card-image center-align valign-wrapper">
+                            <img src="images/d3d37c739713da3e4af07dde87a70b005ed717cd2b5fbb8de81f36703f121cde.jpg">
+                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
+
+                                <a class="btn-floating red" v-on:click="addToCart"><i
+                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
+                                <a class="btn-floating yellow darken-1"><i
+                                        class="material-icons waves-effect waves-light">favorite</i></a>
+
+
+                            </div>
+                        </div>
+                        <li class="divider" tabindex="-1"></li>
+                        <div class="card-content">
+                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
+                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
+                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
+                            <div><p>21 000 Р</p></div>
+                            <i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star_half</i><i class="material-icons yellow-text accent-2">star_border</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 xl4 l6 m6">
+                    <div class="card hoverable">
+                        <div class="card-image center-align valign-wrapper">
+                            <img src="images/ecdfbfbd335512d486d5c3cc419ae0f7f1449d0e8794e7a5e3b774c7d7a965be.jpg">
+                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
+
+                                <a class="btn-floating red" v-on:click="addToCart"><i
+                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
+                                <a class="btn-floating yellow darken-1"><i
+                                        class="material-icons waves-effect waves-light">favorite</i></a>
+
+
+                            </div>
+                            <!--<a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
+                                        class="material-icons">add_shopping_cart</i></a>
+                            <a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
+                                        class="material-icons">favorite</i></a>-->
+                        </div>
+                        <li class="divider" tabindex="-1"></li>
+                        <div class="card-content">
+                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
+                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
+                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
+                            <div><p>21 000 Р</p></div>
+                            <i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star_half</i><i class="material-icons yellow-text accent-2">star_border</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 xl4 l6 m6">
+                    <div class="card hoverable">
+                        <div class="card-image center-align valign-wrapper">
+                            <img src="images/0dc9b2af17d9c12973e4c52fd41da32419f1736032d546f08823c8e1d6d6fc9a.jpg">
+                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
+
+                                <a class="btn-floating red" v-on:click="addToCart"><i
+                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
+                                <a class="btn-floating yellow darken-1"><i
+                                        class="material-icons waves-effect waves-light">favorite</i></a>
+
+
+                            </div>
+                        </div>
+                        <li class="divider" tabindex="-1"></li>
+                        <div class="card-content">
+                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
+                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
+                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
+                            <div><p>21 000 Р</p></div>
+                            <i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star_half</i><i class="material-icons yellow-text accent-2">star_border</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 xl4 l6 m6">
+                    <div class="card hoverable">
+                        <div class="card-image center-align valign-wrapper">
+                            <img src="images/1d353d6dd1b08327d5d598c07ee1e7be58e6ea6bd3b406f1bb93b45188220751.jpg">
+                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
+
+                                <a class="btn-floating red" v-on:click="addToCart"><i
+                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
+                                <a class="btn-floating yellow darken-1"><i
+                                        class="material-icons waves-effect waves-light">favorite</i></a>
+
+
+                            </div>
+                        </div>
+                        <li class="divider" tabindex="-1"></li>
+                        <div class="card-content">
+                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
+                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
+                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
+                            <div><p>21 000 Р</p></div>
+                            <i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star_half</i><i class="material-icons yellow-text accent-2">star_border</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 xl4 l6 m6">
+                    <div class="card hoverable">
+                        <div class="card-image center-align valign-wrapper">
+                            <img src="images/d3d37c739713da3e4af07dde87a70b005ed717cd2b5fbb8de81f36703f121cde.jpg">
+                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
+
+                                <a class="btn-floating red" v-on:click="addToCart"><i
+                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
+                                <a class="btn-floating yellow darken-1"><i
+                                        class="material-icons waves-effect waves-light">favorite</i></a>
+
+
+                            </div>
+                        </div>
+                        <li class="divider" tabindex="-1"></li>
+                        <div class="card-content">
+                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
+                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
+                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
+                            <div><p>21 000 Р</p></div>
+                            <i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star_half</i><i class="material-icons yellow-text accent-2">star_border</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 xl4 l6 m6">
+                    <div class="card hoverable">
+                        <div class="card-image center-align valign-wrapper">
+                            <img src="images/ecdfbfbd335512d486d5c3cc419ae0f7f1449d0e8794e7a5e3b774c7d7a965be.jpg">
+                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
+
+                                <a class="btn-floating red" v-on:click="addToCart"><i
+                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
+                                <a class="btn-floating yellow darken-1"><i
+                                        class="material-icons waves-effect waves-light">favorite</i></a>
+
+
+                            </div>
+                            <!--<a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
+                                        class="material-icons">add_shopping_cart</i></a>
+                            <a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
+                                        class="material-icons">favorite</i></a>-->
+                        </div>
+                        <li class="divider" tabindex="-1"></li>
+                        <div class="card-content">
+                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
+                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
+                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
+                            <div><p>21 000 Р</p></div>
+                            <i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star_half</i><i class="material-icons yellow-text accent-2">star_border</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 xl4 l6 m6">
+                    <div class="card hoverable">
+                        <div class="card-image center-align valign-wrapper">
+                            <img src="images/0dc9b2af17d9c12973e4c52fd41da32419f1736032d546f08823c8e1d6d6fc9a.jpg">
+                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
+
+                                <a class="btn-floating red" v-on:click="addToCart"><i
+                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
+                                <a class="btn-floating yellow darken-1"><i
+                                        class="material-icons waves-effect waves-light">favorite</i></a>
+
+
+                            </div>
+                        </div>
+                        <li class="divider" tabindex="-1"></li>
+                        <div class="card-content">
+                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
+                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
+                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
+                            <div><p>21 000 Р</p></div>
+                            <i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star_half</i><i class="material-icons yellow-text accent-2">star_border</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 xl4 l6 m6">
+                    <div class="card hoverable">
+                        <div class="card-image center-align valign-wrapper">
+                            <img src="images/1d353d6dd1b08327d5d598c07ee1e7be58e6ea6bd3b406f1bb93b45188220751.jpg">
+                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
+
+                                <a class="btn-floating red" v-on:click="addToCart"><i
+                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
+                                <a class="btn-floating yellow darken-1"><i
+                                        class="material-icons waves-effect waves-light">favorite</i></a>
+
+
+                            </div>
+                        </div>
+                        <li class="divider" tabindex="-1"></li>
+                        <div class="card-content">
+                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
+                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
+                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
+                            <div><p>21 000 Р</p></div>
+                            <i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star_half</i><i class="material-icons yellow-text accent-2">star_border</i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 xl4 l6 m6">
+                    <div class="card hoverable">
+                        <div class="card-image center-align valign-wrapper">
+                            <img src="images/d3d37c739713da3e4af07dde87a70b005ed717cd2b5fbb8de81f36703f121cde.jpg">
+                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
+
+                                <a class="btn-floating red" v-on:click="addToCart"><i
+                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
+                                <a class="btn-floating yellow darken-1"><i
+                                        class="material-icons waves-effect waves-light">favorite</i></a>
+
+
+                            </div>
+                        </div>
+                        <li class="divider" tabindex="-1"></li>
+                        <div class="card-content">
+                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
+                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
+                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
+                            <div><p>21 000 Р</p></div>
+                            <i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star</i><i class="material-icons yellow-text accent-2">star_half</i><i class="material-icons yellow-text accent-2">star_border</i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row center">
+                <a class="waves-effect waves-light btn-large red darken-4">
+                    <i class="material-icons right">add</i>Показать ещё
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col xl3 show-on-large right-menu z-depth-2" style="display: none">
+        <div class="section">
+            <h5><!--<i class="material-icons left">
                 category
-            </i>Каталог товаров</h5>
+            </i>-->Каталог товаров</h5>
             <li class="divider red darken-4" tabindex="-1"></li>
         </div>
-        <ul class="collapsible">
+        <ul class="collapsible clm clp">
             <li>
                 <div class="collapsible-header" tabindex="0"><i class="material-icons Small">arrow_drop_down</i>Телефоны
                 </div>
                 <div class="collapsible-body">
                     <ul class="collapsible">
                         <li>
-                            <div class="collapsible-header" tabindex="0">Apple</div>
+                            <div class="collapsible-header" tabindex="0"><i class="material-icons Small"></i>Apple
+                            </div>
                         </li>
                         <li>
-                            <div class="collapsible-header" tabindex="0">Sumsung</div>
+                            <div class="collapsible-header" tabindex="0"><i
+                                    class="material-icons Small">arrow_drop_down</i>Sumsung
+                            </div>
+                            <div class="collapsible-body">
+                                <ul class="collapsible">
+                                    <li>
+                                        <div class="collapsible-header"><i class="material-icons Small"></i>First
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="collapsible-header"><i class="material-icons Small"></i>Second
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="collapsible-header"><i
+                                                class="material-icons Small">arrow_drop_down</i>Third
+                                        </div>
+                                        <div class="collapsible-body">
+                                            <ul class="collapsible">
+                                                <li>
+                                                    <div class="collapsible-header"><i class="material-icons Small"></i>First
+                                                    </div>
+
+                                                </li>
+                                                <li>
+                                                    <div class="collapsible-header"><i class="material-icons Small"></i>Second
+                                                    </div>
+
+                                                </li>
+                                                <li>
+                                                    <div class="collapsible-header"><i class="material-icons Small"></i>Third
+                                                    </div>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
+
                         <li>
-                            <div class="collapsible-header" tabindex="0">Xiaomi</div>
+                            <div class="collapsible-header" tabindex="0"><i class="material-icons Small"></i>Xiaomi
+                            </div>
+
                         </li>
+
 
                     </ul>
                 </div>
@@ -523,411 +1030,6 @@
             <li class="divider" tabindex="-1"></li>
         </ul>
     </div>
-    <div class="col xl9 l9">
-
-        <nav class="white">
-            <div class="nav-wrapper">
-                <form>
-                    <div class="input-field">
-
-                        <input id="search" type="search" class="" required autocomplete="off">
-                        <label class="label-icon" for="search"><i class="material-icons black-text">search</i></label>
-                        <i class="material-icons">close</i>
-                        <!-- <label class="label-icon" for="search"><i class="material-icons prefix black-text">search</i></label>
-                         <input type="search" id="text" class="autocomplete" autocomplete="off">
-                         <i class="material-icons">close</i>-->
-
-                    </div>
-                </form>
-            </div>
-        </nav>
-
-        <div class="section">
-        </div>
-        <div class="carousel carousel-slider center">
-
-            <div class="carousel-item white-text" href="#one!">
-                <img src="images/page2-parallax-img.jpg">
-            </div>
-            <div class="carousel-item white-text" href="#three!">
-                <img src="images/page2-parallax-img.jpg">
-            </div>
-            <div class="carousel-item white-text" href="#three!">
-                <img src="images/page2-parallax-img.jpg">
-            </div>
-            <div class="carousel-item white-text" href="#three!">
-                <img src="images/page2-parallax-img.jpg">
-            </div>
-        </div>
-
-        <div class="col s12">
-            <div class="section">
-                <div class="row center">&nbsp;</div>
-            </div>
-        </div>
-
-        <div class="col s12">
-            <div class="row">
-                <div class="col s12 xl3 l4 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/ecdfbfbd335512d486d5c3cc419ae0f7f1449d0e8794e7a5e3b774c7d7a965be.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                            <!--<a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
-                                        class="material-icons">add_shopping_cart</i></a>
-                            <a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
-                                        class="material-icons">favorite</i></a>-->
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <h6>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</h6>
-                            <span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                            <span class="new badge green white-text" data-badge-caption="">Акция</span>
-                            <p>21 000 Р</p>
-                        </div>
-                        <!--<div class="card-action">
-
-                        </div>-->
-                    </div>
-                </div>
-                <div class="col s12 xl3 l4 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/0dc9b2af17d9c12973e4c52fd41da32419f1736032d546f08823c8e1d6d6fc9a.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <h6>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</h6>
-                            <span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                            <span class="new badge green white-text" data-badge-caption="">Акция</span>
-                            <p>21 000 Р</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl3 l4 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/1d353d6dd1b08327d5d598c07ee1e7be58e6ea6bd3b406f1bb93b45188220751.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <h6>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</h6>
-                            <span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                            <span class="new badge green white-text" data-badge-caption="">Акция</span>
-                            <p>21 000 Р</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl3 l4 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/d3d37c739713da3e4af07dde87a70b005ed717cd2b5fbb8de81f36703f121cde.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <h6>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</h6>
-                            <span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                            <span class="new badge green white-text" data-badge-caption="">Акция</span>
-                            <p>21 000 Р</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl3 l4 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/ecdfbfbd335512d486d5c3cc419ae0f7f1449d0e8794e7a5e3b774c7d7a965be.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                            <!--<a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
-                                        class="material-icons">add_shopping_cart</i></a>
-                            <a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
-                                        class="material-icons">favorite</i></a>-->
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <h6>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</h6>
-                            <span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                            <span class="new badge green white-text" data-badge-caption="">Акция</span>
-                            <p>21 000 Р</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl3 l4 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/0dc9b2af17d9c12973e4c52fd41da32419f1736032d546f08823c8e1d6d6fc9a.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <h6>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</h6>
-                            <span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                            <span class="new badge green white-text" data-badge-caption="">Акция</span>
-                            <p>21 000 Р</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl3 l4 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/1d353d6dd1b08327d5d598c07ee1e7be58e6ea6bd3b406f1bb93b45188220751.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <h6>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</h6>
-                            <span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                            <span class="new badge green white-text" data-badge-caption="">Акция</span>
-                            <p>21 000 Р</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl3 l4 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/d3d37c739713da3e4af07dde87a70b005ed717cd2b5fbb8de81f36703f121cde.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <h6>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</h6>
-                            <span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                            <span class="new badge green white-text" data-badge-caption="">Акция</span>
-                            <p>21 000 Р</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl3 l4 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/ecdfbfbd335512d486d5c3cc419ae0f7f1449d0e8794e7a5e3b774c7d7a965be.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                            <!--<a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
-                                        class="material-icons">add_shopping_cart</i></a>
-                            <a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
-                                        class="material-icons">favorite</i></a>-->
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <h6>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</h6>
-                            <span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                            <span class="new badge green white-text" data-badge-caption="">Акция</span>
-                            <p>21 000 Р</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl3 l4 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/0dc9b2af17d9c12973e4c52fd41da32419f1736032d546f08823c8e1d6d6fc9a.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <h6>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</h6>
-                            <span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                            <span class="new badge green white-text" data-badge-caption="">Акция</span>
-                            <p>21 000 Р</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl3 l4 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/1d353d6dd1b08327d5d598c07ee1e7be58e6ea6bd3b406f1bb93b45188220751.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <h6>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</h6>
-                            <span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                            <span class="new badge green white-text" data-badge-caption="">Акция</span>
-                            <p>21 000 Р</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl3 l4 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/d3d37c739713da3e4af07dde87a70b005ed717cd2b5fbb8de81f36703f121cde.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <h6>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</h6>
-                            <span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                            <span class="new badge green white-text" data-badge-caption="">Акция</span>
-                            <p>21 000 Р</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl3 l4 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/ecdfbfbd335512d486d5c3cc419ae0f7f1449d0e8794e7a5e3b774c7d7a965be.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                            <!--<a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
-                                        class="material-icons">add_shopping_cart</i></a>
-                            <a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
-                                        class="material-icons">favorite</i></a>-->
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <h6>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</h6>
-                            <span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                            <span class="new badge green white-text" data-badge-caption="">Акция</span>
-                            <p>21 000 Р</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl3 l4 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/0dc9b2af17d9c12973e4c52fd41da32419f1736032d546f08823c8e1d6d6fc9a.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <h6>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</h6>
-                            <span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                            <span class="new badge green white-text" data-badge-caption="">Акция</span>
-                            <p>21 000 Р</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl3 l4 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/1d353d6dd1b08327d5d598c07ee1e7be58e6ea6bd3b406f1bb93b45188220751.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <h6>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</h6>
-                            <span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                            <span class="new badge green white-text" data-badge-caption="">Акция</span>
-                            <p>21 000 Р</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl3 l4 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/d3d37c739713da3e4af07dde87a70b005ed717cd2b5fbb8de81f36703f121cde.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <h6>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</h6>
-                            <span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                            <span class="new badge green white-text" data-badge-caption="">Акция</span>
-                            <p>21 000 Р</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
 
 </div>
 
@@ -1068,31 +1170,27 @@
     new Vue({
         el: '#app',
         data: {
-            cartItem : 0,
-            toastHTML : 'Добавлено в корзину',
-        },
-        computed: {
+            cartItem: 0,
+            toastHTML: 'Добавлено в корзину',
 
         },
+        computed: {},
         methods: {
             addToCart: function () {
-                M.toast({html : this.toastHTML, classes: "redToast"});
+                M.toast({html: this.toastHTML, classes: "redToast"});
                 this.cartItem++;
+            },
+            addProducts: function () {
+
             }
         }
     });
 
     new Vue({
         el: '#cart',
-        data: {
-            
-        },
-        computed: {
-
-        },
-        methods: {
-
-        }
+        data: {},
+        computed: {},
+        methods: {}
     })
 </script>
 </body>
