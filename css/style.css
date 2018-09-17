@@ -18,6 +18,7 @@ footer.page-footer{margin:0;}
 /*.carousel {min-height: 900px;}*/
 .h-init {height: initial !important;}
 .collapsible li ul {padding-left: 5px !important;}
+.width100{ width: 100%; max-width: 1280px;}
 .ovh {overflow: hidden}
 .btn-not-fixed{
     position: absolute;

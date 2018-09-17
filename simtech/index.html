@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" class="rel">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+</head>
+<body>
+<div class="row">
+    <div class="block-about valign-wrapper">
+        <div class="block_about">
+            <div class="about_item">
+                <div class="about-item_icon">
+                    <img src="img/flat.png" alt="">
+                </div>
+                <div class="about-item_title">
+                    FLAT DESIGN
+                </div>
+                <div class="about-item_description">
+                    Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus
+                    eget mauris fusce sit amet
+                </div>
+            </div>
+            <div class="about_item">
+                <div class="about-item_icon">
+                    <img src="img/retiny.png" alt="">
+                </div>
+                <div class="about-item_title">
+                    FLAT DESIGN
+                </div>
+                <div class="about-item_description">
+                    Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus
+                    eget mauris fusce sit amet
+                </div>
+            </div>
+            <div class="about_item">
+                <div class="about-item_icon">
+                    <img src="img/reasponsive.png" alt="">
+                </div>
+                <div class="about-item_title">
+                    FLAT DESIGN
+                </div>
+                <div class="about-item_description">
+                    Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus
+                    eget mauris fusce sit amet
+                </div>
+            </div>
+            <div class="about_item">
+                <div class="about-item_icon">
+                    <img src="img/clean.png" alt="">
+                </div>
+                <div class="about-item_title">
+                    FLAT DESIGN
+                </div>
+                <div class="about-item_description">
+                    Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus
+                    eget mauris fusce sit amet
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="row black">
+
+    <div class="block_portfolio">
+        <div class="portfolio_menu">
+            <div class="portfolio-menu_header">
+                portfolio
+            </div>
+            <div class="portfolio-menu_items">
+                <ul>
+                    <li><a href="#" data-filter="all" class="active">all</a></li>
+                    <li><a href="#" data-filter="illustration">Illustration</a></li>
+                    <li><a href="#" data-filter="digitalart">Digital Art</a></li>
+                    <li><a href="#" data-filter="webdesign">Web design</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="portfolio_items">
+            <a><div class="item_overlay">
+                    <div class="item_info">
+                        <img src="img/plus.png">
+                        <span class="project_name">design name</span>
+                    </div>
+                </div>
+                <img class="main_img" src="img/1.png" alt="" data-filter="digitalart">
+            </a><a><div class="item_overlay">
+                <div class="item_info">
+                    <img src="img/plus.png">
+                    <span class="project_name">design name</span>
+                </div>
+            </div>
+            <img class="main_img" src="img/2.png" alt="" data-filter="webdesign">
+        </a><a>
+                <div class="item_overlay">
+                    <div class="item_info">
+                        <img src="img/plus.png">
+                        <span class="project_name">design name</span>
+                    </div>
+                </div>
+                <img class="main_img" src="img/3.png" alt="" data-filter="illustration">
+        </a><a>
+                <div class="item_overlay">
+                    <div class="item_info">
+                        <img src="img/plus.png">
+                        <span class="project_name">design name</span>
+                    </div>
+                </div>
+                <img class="main_img" src="img/4.png" alt="" data-filter="illustration">
+            </a><a>
+                <div class="item_overlay">
+                    <div class="item_info">
+                        <img src="img/plus.png">
+                        <span class="project_name">design name</span>
+                    </div>
+                </div>
+                <img class="main_img" src="img/5.png" alt="" data-filter="webdesign">
+        </a><a>
+                <div class="item_overlay">
+                    <div class="item_info">
+                        <img src="img/plus.png">
+                        <span class="project_name">design name</span>
+                    </div>
+                </div>
+                <img class="main_img" src="img/6.png" alt="" data-filter="digitalart">
+            </a><a>
+            <div class="item_overlay">
+                <div class="item_info">
+                    <img src="img/plus.png">
+                    <span class="project_name">design name</span>
+                </div>
+            </div>
+            <img class="main_img" src="img/7.png" alt="" data-filter="webdesign">
+        </a><a>
+            <div class="item_overlay">
+                <div class="item_info">
+                    <img src="img/plus.png">
+                    <span class="project_name">design name</span>
+                </div>
+            </div>
+            <img class="main_img" src="img/8.png" alt="" data-filter="illustration"></a>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+    $('.portfolio-menu_items li a').on('click', function () {
+        $('.portfolio-menu_items li a').removeClass('active');
+        $(this).addClass('active');
+        filter = $(this).data('filter');
+
+        var arrVis = [], arrHid = [];
+
+        if (filter == 'all') {
+            /*$('.portfolio_items img').hide(300);*/
+            $('.portfolio_items img.main_img').show(300);
+        } else {
+            $.each($('.portfolio_items img.main_img'), function (key, value) {
+                if ($(value).data('filter') == filter) {
+                    arrVis.push(value);
+
+                } else {
+                    arrHid.push(value);
+                }
+            });
+
+
+            /*console.log(arrHid);
+            console.log(arrVis);*/
+
+
+            $(arrHid).hide(300);
+            $(arrVis).show(300);
+
+        }
+        return false;
+    });
+</script>
+</html>
