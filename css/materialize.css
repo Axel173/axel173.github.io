@@ -5895,9 +5895,9 @@ body.keyboard-focused .dropdown-content li:focus {
 .sidenav.fixed .collapsible-header {
   background-color: transparent;
   border: none;
-  line-height: inherit;
+  line-height: 24px;
   height: inherit;
-  padding: 0 16px;
+  padding: 13px 16px;;
 }
 
 .sidenav .collapsible-header:hover,

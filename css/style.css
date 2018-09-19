@@ -29,6 +29,10 @@ footer.page-footer{margin:0;}
 .card-image{height: 200px; justify-content: center;}
 .card-image img {    width: auto !important;;    height: initial !important;;    display: inline-block !important;}
 
+.keyboard-focused .collapsible-header:focus {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
 .right-menu .collapsible,
 .right-menu.fixed .collapsible {
     border: none;
@@ -48,6 +52,7 @@ footer.page-footer{margin:0;}
     line-height: inherit;
     height: inherit;
     padding: 0 16px;
+    display: block;
 }
 
 .right-menu .collapsible-header:hover,
