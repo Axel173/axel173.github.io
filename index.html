@@ -35,7 +35,7 @@
         </div>
 
         <li class="">
-            <a href="#" class="dropdown-trigger" data-target="dropdown1"><i
+            <a href="#"><i
                     class="material-icons left">account_box</i>Авторизация</a>
 
         </li>
@@ -252,9 +252,7 @@
 
     <div class="navbar-fixed" role="navigation">
         <nav class="navbar red darken-4" role="navigation">
-            <ul id="dropdown1" class="dropdown-content  red darken-4">
 
-            </ul>
             <div class="nav-wrapper">
 
                 <a href="#" data-target="nav-mobile" class="sidenav-trigger show-on-large white-text"><i
@@ -265,12 +263,12 @@
 
 
                     <li class="">
-                        <a href="#" class="dropdown-trigger white-text" data-target="dropdown1"><i
+                        <a href="#" class="white-text"><i
                                 class="material-icons left">account_box</i>Авторизация</a>
 
                     </li>
 
-                    <li><a href="#" class="white-text"><i class="material-icons left">shopping_cart</i>Корзина<span
+                    <li><a href="#" class="white-text dropdown-trigger" data-target='dropdown1'><i class="material-icons left">shopping_cart</i>Корзина<span
                             class="new badge red cart" data-badge-caption="">{{ cart_items }}</span></a></li>
 
                 </ul>
@@ -279,11 +277,21 @@
 
 
                     <li><a href="#" class="white-text"><i class="material-icons left clm">shopping_cart</i><span
-                            class="new badge red cart" data-badge-caption="">{{ cart_items }}</span></a></li>
+                            class="new badge red cart" data-badge-caption="">{{ cart_items }}</span></a>
+                        <ul id='dropdown1' class='dropdown-content'>
+                            <li><a href="#!">one</a></li>
+                            <li><a href="#!">two</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li><a href="#!">three</a></li>
+                            <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+                            <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+                        </ul>
+                    </li>
 
                 </ul>
 
             </div>
+
             <!--<a class="btn-floating btn-small halfway-fab waves-effect waves-light teal">
                 <i class="material-icons">search</i>
             </a>-->
