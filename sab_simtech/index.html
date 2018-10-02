@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Features</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,500,600,700|Raleway:400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<section>
+    <div class="features">
+        <div class="features-header">
+            <h2 class="features-title">our <span class="features-title__red">product features</span></h2>
+
+            <p class="features-text">Lorem ipsum dolor sit amet, consectetur <span class="features-text__red">adipisicing elit</span>.
+                Asperiores beatae odit, omnis optio quos reiciendis rem sapiente vitae? Illo, velit.</p>
+
+        </div>
+        <div class="features-content">
+            <div class="features-content-column">
+                <div class="column-list">
+                    <ul class="column-list__right">
+                        <li class="list-item"><a class="list-item-link" href="#">Unlimited Color Options</a></li>
+                        <li class="list-item"><a class="list-item-link" href="#">Outstanding Support</a></li>
+                        <li class="list-item"><a class="list-item-link" href="#">Retina Ready</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="features-content-column">
+                <img class="column-img" src="img/buy.png">
+            </div>
+            <div class="features-content-column">
+                <div class="column-list">
+                    <ul class="column-list__left">
+                        <li class="list-item"><a class="list-item-link" href="#">Unlimited Color Options</a></li>
+                        <li class="list-item"><a class="list-item-link" href="#">Outstanding Support</a></li>
+                        <li class="list-item"><a class="list-item-link" href="#">Retina Ready</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="clients__bg">
+    <div class="clients">
+        <div class="clients-header">
+            <h2 class="clients-title">our <span class="clients-title__red">clients</span></h2>
+            <p class="clients-text">Lorem ipsum dolor sit amet, consectetur <span class="clients-text__red">adipisicing elit</span>.
+                Asperiores beatae odit, omnis optio quos reiciendis rem sapiente vitae? Illo, velit.</p>
+        </div>
+        <div class="clients-content">
+            <div class="clients-content-column">
+                <div class="slider">
+                    <h2 class="slide-title">happy clients say</h2>
+                    <div class="slider-container">
+                        <div class="slide slide__active">
+                            <div class="slide-header">
+                                <p class="slide-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                    sed magna vel
+                                    velit dignissim luctus eu in urna. Dapibus egestas turpis. </p>
+
+                            </div>
+                            <div class="slide-content">
+                                <div class="slide-content-avatar">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <p class="slide-content-name">amr srour</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-header">
+                                <p class="slide-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                    sed magna vel
+                                    velit dignissim luctus eu in urna. Dapibus  </p>
+
+                            </div>
+                            <div class="slide-content">
+                                <div class="slide-content-avatar">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <p class="slide-content-name">amr srour2</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-header">
+                                <p class="slide-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                    sed magna vel
+                                    velit dignissim luctus eu in urna.</p>
+
+                            </div>
+                            <div class="slide-content">
+                                <div class="slide-content-avatar">
+                                    <img src="img/user.png" alt="">
+                                </div>
+                                <p class="slide-content-name">amr srour3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="dots">
+                        <li class="dot dot__active">
+                            <a href="#"></a>
+                        </li>
+                        <li class="dot">
+                            <a href="#"></a>
+                        </li>
+                        <li class="dot">
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clients-content-column">
+                <img src="img/codecanyon.png" alt="" class="clients-img">
+                <img src="img/graphicriver.png" alt="" class="clients-img">
+                <img src="img/photodune.png" alt="" class="clients-img">
+                <img src="img/videohive.png" alt="" class="clients-img">
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+
+        var slideNow = 1;
+        var slideInterval = 3000;
+        var dot = $('.dot');
+
+        function nextSlide() {
+            slideCount = $('.slide').length;
+            if(slideCount > 1)
+            {
+                if (slideNow < slideCount) {
+                    cur_slide = $('.slide__active');
+                    cur_slide.removeClass('slide__active');
+                    cur_slide.next().addClass('slide__active');
+
+                    cur_dot = $('.dot__active');
+                    cur_dot.removeClass('dot__active');
+                    cur_dot.next().addClass('dot__active');
+
+                    slideNow++;
+                } else {
+                    cur_slide = $('.slide');
+                    cur_slide.removeClass('slide__active');
+                    cur_slide.first().addClass('slide__active');
+
+                    cur_dot = $('.dot');
+                    cur_dot.removeClass('dot__active');
+                    cur_dot.first().addClass('dot__active');
+                    slideNow = 1;
+                }
+            }
+        }
+
+        var interval_id = setInterval(nextSlide, slideInterval);
+
+        dot.on('click', function () {
+            dot_target = $(this);
+
+            if(!dot_target.hasClass('dot__active'))
+            {
+                cur_slide = $('.slide__active');
+                cur_slide.removeClass('slide__active');
+
+                slideNow = dot_target.index() + 1;
+
+                $('.slide').eq(dot_target.index()).addClass('slide__active');
+                dot.removeClass('dot__active');
+                dot_target.addClass('dot__active');
+
+                clearInterval(interval_id);
+                interval_id = setInterval(nextSlide, slideInterval);
+            }
+        });
+
+    });
+</script>
+</body>
+
+</html>
