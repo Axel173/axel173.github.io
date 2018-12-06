@@ -3,1349 +3,215 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>ElShop</title>
-    <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" class="rel">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
 
 </head>
-<body class="blue-grey lighten-5">
-<header id="header">
-    <ul id="nav-mobile" class="sidenav">
-        <li>
-            <div class="user-view">
-                <div class="background">
-                    <img src="images/office.jpg">
+<body>
+<div class="row">
+    <div class="block-about valign-wrapper">
+        <div class="block-about__wrapper">
+            <div class="about-item">
+                <div class="about-item__icon">
+                    <img src="img/flat.png" alt="">
                 </div>
-                <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-                <a href="#name"><span class="white-text name">John Doe</span></a>
-                <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                <div class="about-item__title">
+                    FLAT DESIGN
+                </div>
+                <div class="about-item__description">
+                    Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus
+                    eget mauris fusce sit amet
+                </div>
             </div>
-        </li>
-
-        <div class="nav-wrapper">
-            <form>
-                <div class="input-field">
-                    <input id="search-side" type="search" required>
-                    <label class="label-icon" for="search-side"><i class="material-icons">search</i></label>
-                    <i class="material-icons">close</i>
+            <div class="about-item">
+                <div class="about-item__icon">
+                    <img src="img/retiny.png" alt="">
                 </div>
-            </form>
+                <div class="about-item__title">
+                    FLAT DESIGN
+                </div>
+                <div class="about-item__description">
+                    Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus
+                    eget mauris fusce sit amet
+                </div>
+            </div>
+            <div class="about-item">
+                <div class="about-item__icon">
+                    <img src="img/reasponsive.png" alt="">
+                </div>
+                <div class="about-item__title">
+                    FLAT DESIGN
+                </div>
+                <div class="about-item__description">
+                    Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus
+                    eget mauris fusce sit amet
+                </div>
+            </div>
+            <div class="about-item">
+                <div class="about-item__icon">
+                    <img src="img/clean.png" alt="">
+                </div>
+                <div class="about-item__title">
+                    FLAT DESIGN
+                </div>
+                <div class="about-item__description">
+                    Lorem ipsum dolor sit amet cras vitae sodales ac nec prellentesque vivamus
+                    eget mauris fusce sit amet
+                </div>
+            </div>
+
         </div>
-
-        <li class="">
-            <a href="#"><i
-                    class="material-icons left">account_box</i>Авторизация</a>
-
-        </li>
-
-        <li><a href="#" class=""><i class="material-icons left">shopping_cart</i>Корзина<span
-                class="new badge red cart" data-badge-caption="" id="cart">{{ cart_items }}</span></a></li>
-        <ul class="collapsible">
-            <li>
-                <div class="collapsible-header" tabindex="0"><i class="material-icons small right">arrow_right</i>Телефоны
-                </div>
-                <div class="collapsible-body">
-                    <ul class="collapsible">
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Apple</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Sumsung</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Xiaomi</div>
-                        </li>
-
-                    </ul>
-                </div>
-            </li>
-            <li class="divider" tabindex="-1"></li>
-            <li>
-                <div class="collapsible-header" tabindex="0"><i class="material-icons small right">arrow_right</i>Телефоны
-                </div>
-                <div class="collapsible-body">
-                    <ul class="collapsible">
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Смартфоны</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Мобильные телефоны</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Смарт-часы</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Чехлы и бамперы</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Аксессуары для смартфонов</div>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="divider" tabindex="-1"></li>
-            <li>
-                <div class="collapsible-header" tabindex="0"><i class="material-icons small right">arrow_right</i>ТВ и
-                    видеотехника
-                </div>
-                <div class="collapsible-body">
-                    <ul class="collapsible">
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Телевизоры</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Медиаплееры</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">ТВ -ресиверы</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Проекторы</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Домашние кинотеатры</div>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="divider" tabindex="-1"></li>
-            <li>
-                <div class="collapsible-header" tabindex="0"><i class="material-icons small right">arrow_right</i>Телефоны
-                </div>
-                <div class="collapsible-body">
-                    <ul class="collapsible">
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Apple</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Sumsung</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Xiaomi</div>
-                        </li>
-
-                    </ul>
-                </div>
-            </li>
-            <li class="divider" tabindex="-1"></li>
-            <li>
-                <div class="collapsible-header" tabindex="0"><i class="material-icons small right">arrow_right</i>Телефоны
-                </div>
-                <div class="collapsible-body">
-                    <ul class="collapsible">
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Смартфоны</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Мобильные телефоны</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Смарт-часы</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Чехлы и бамперы</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Аксессуары для смартфонов</div>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="divider" tabindex="-1"></li>
-            <li>
-                <div class="collapsible-header" tabindex="0"><i class="material-icons small right">arrow_right</i>ТВ и
-                    видеотехника
-                </div>
-                <div class="collapsible-body">
-                    <ul class="collapsible">
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Телевизоры</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Медиаплееры</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">ТВ -ресиверы</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Проекторы</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Домашние кинотеатры</div>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="divider" tabindex="-1"></li>
-            <li>
-                <div class="collapsible-header" tabindex="0"><i class="material-icons small right">arrow_right</i>Телефоны
-                </div>
-                <div class="collapsible-body">
-                    <ul class="collapsible">
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Apple</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Sumsung</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Xiaomi</div>
-                        </li>
-
-                    </ul>
-                </div>
-            </li>
-            <li class="divider" tabindex="-1"></li>
-            <li>
-                <div class="collapsible-header" tabindex="0"><i class="material-icons small right">arrow_right</i>Телефоны
-                </div>
-                <div class="collapsible-body">
-                    <ul class="collapsible">
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Смартфоны</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Мобильные телефоны</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Смарт-часы</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Чехлы и бамперы</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Аксессуары для смартфонов</div>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="divider" tabindex="-1"></li>
-            <li>
-                <div class="collapsible-header" tabindex="0"><i class="material-icons small right">arrow_right</i>ТВ и
-                    видеотехника
-                </div>
-                <div class="collapsible-body">
-                    <ul class="collapsible">
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Телевизоры</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Медиаплееры</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">ТВ -ресиверы</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Проекторы</div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header" tabindex="0">Домашние кинотеатры</div>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="divider" tabindex="-1"></li>
-        </ul>
-    </ul>
-
-    <div class="navbar-fixed" role="navigation">
-        <nav class="navbar red darken-4" role="navigation">
-
-            <div class="nav-wrapper">
-
-                <a href="#" data-target="nav-mobile" class="sidenav-trigger show-on-large white-text"><i
-                        class="material-icons">menu</i></a>
-                <a id="logo-container" href="#" class="brand-logo white-text">El-Shop</a>
-
-                <ul class="right hide-on-med-and-down center-align">
-
-
-                    <li class="">
-                        <a href="#" class="white-text"><i
-                                class="material-icons left">account_box</i>Авторизация</a>
-
-                    </li>
-
-                    <li><a href="#" class="white-text dropdown-trigger" data-target='dropdown1'><i class="material-icons left">shopping_cart</i>Корзина<span
-                            class="new badge red cart" data-badge-caption="">{{ cart_items }}</span></a></li>
-
-                </ul>
-
-                <ul class="right hide-on-large-only  center-align">
-
-
-                    <li><a href="#" class="white-text"><i class="material-icons left clm">shopping_cart</i><span
-                            class="new badge red cart" data-badge-caption="">{{ cart_items }}</span></a>
-                        <ul id='dropdown1' class='dropdown-content'>
-                            <li><a href="#!">one</a></li>
-                            <li><a href="#!">two</a></li>
-                            <li class="divider" tabindex="-1"></li>
-                            <li><a href="#!">three</a></li>
-                            <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-                            <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-                        </ul>
-                    </li>
-
-                </ul>
-
-            </div>
-
-            <!--<a class="btn-floating btn-small halfway-fab waves-effect waves-light teal">
-                <i class="material-icons">search</i>
-            </a>-->
-
-            <div class="nav-wrapper">
-                <!--<form>
-                    <div class="input-field">
-                        <input id="search" type="search" required>
-                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                        <i class="material-icons">close</i>
-                    </div>
-                </form>-->
-
-            </div>
-
-        </nav>
-
-
-    </div>
-</header>
-<div class="container">
-    <div class="section">
-        <div class="row center">&nbsp;</div>
     </div>
 </div>
-
-<div class="row width100" id="app">
-
-    <div class="col xl9">
-
-        <nav class="white">
-            <div class="nav-wrapper">
-                <form>
-                    <div class="input-field">
-
-                        <input id="search" type="search" class="" required autocomplete="off">
-                        <label class="label-icon" for="search"><i class="material-icons black-text">search</i></label>
-                        <i class="material-icons">close</i>
-                        <!-- <label class="label-icon" for="search"><i class="material-icons prefix black-text">search</i></label>
-                         <input type="search" id="text" class="autocomplete" autocomplete="off">
-                         <i class="material-icons">close</i>-->
-
-                    </div>
-                </form>
+<div class="row black">
+    <div class="portfolio">
+        <div class="portfolio-menu">
+            <div class="portfolio-menu__header">
+                portfolio
             </div>
-        </nav>
-
-        <div class="section">
-        </div>
-        <div class="carousel carousel-slider center z-depth-2">
-
-            <div class="carousel-item white-text" href="#one!">
-                <img src="images/page2-parallax-img.jpg">
-            </div>
-            <div class="carousel-item white-text" href="#three!">
-                <img src="images/page2-parallax-img.jpg">
-            </div>
-            <div class="carousel-item white-text" href="#three!">
-                <img src="images/page2-parallax-img.jpg">
-            </div>
-            <div class="carousel-item white-text" href="#three!">
-                <img src="images/page2-parallax-img.jpg">
-            </div>
-        </div>
-
-        <div class="col s12">
-            <div class="section">
-                <div class="row center">&nbsp;</div>
-            </div>
-        </div>
-
-        <div class="col s12">
-            <div class="row">
-                <div class="col s12 xl4 l6 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/ecdfbfbd335512d486d5c3cc419ae0f7f1449d0e8794e7a5e3b774c7d7a965be.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i
-                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i
-                                        class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                            <!--<a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
-                                        class="material-icons">add_shopping_cart</i></a>
-                            <a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
-                                        class="material-icons">favorite</i></a>-->
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
-                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
-                            <div><p>21 000 Р</p></div>
-                            <i class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star_half</i><i
-                                class="material-icons yellow-text accent-2">star_border</i>
-
-                        </div>
-                        <!--<div class="card-action">
-
-                        </div>-->
-                    </div>
-                </div>
-                <div class="col s12 xl4 l6 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/0dc9b2af17d9c12973e4c52fd41da32419f1736032d546f08823c8e1d6d6fc9a.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i
-                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i
-                                        class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
-                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
-                            <div><p>21 000 Р</p></div>
-                            <i class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star_half</i><i
-                                class="material-icons yellow-text accent-2">star_border</i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl4 l6 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/1d353d6dd1b08327d5d598c07ee1e7be58e6ea6bd3b406f1bb93b45188220751.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i
-                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i
-                                        class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
-                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
-                            <div><p>21 000 Р</p></div>
-                            <i class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star_half</i><i
-                                class="material-icons yellow-text accent-2">star_border</i>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl4 l6 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/d3d37c739713da3e4af07dde87a70b005ed717cd2b5fbb8de81f36703f121cde.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i
-                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i
-                                        class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
-                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
-                            <div><p>21 000 Р</p></div>
-                            <i class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star_half</i><i
-                                class="material-icons yellow-text accent-2">star_border</i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl4 l6 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/ecdfbfbd335512d486d5c3cc419ae0f7f1449d0e8794e7a5e3b774c7d7a965be.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i
-                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i
-                                        class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                            <!--<a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
-                                        class="material-icons">add_shopping_cart</i></a>
-                            <a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
-                                        class="material-icons">favorite</i></a>-->
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
-                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
-                            <div><p>21 000 Р</p></div>
-                            <i class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star_half</i><i
-                                class="material-icons yellow-text accent-2">star_border</i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl4 l6 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/0dc9b2af17d9c12973e4c52fd41da32419f1736032d546f08823c8e1d6d6fc9a.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i
-                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i
-                                        class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
-                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
-                            <div><p>21 000 Р</p></div>
-                            <i class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star_half</i><i
-                                class="material-icons yellow-text accent-2">star_border</i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl4 l6 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/1d353d6dd1b08327d5d598c07ee1e7be58e6ea6bd3b406f1bb93b45188220751.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i
-                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i
-                                        class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
-                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
-                            <div><p>21 000 Р</p></div>
-                            <i class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star_half</i><i
-                                class="material-icons yellow-text accent-2">star_border</i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl4 l6 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/d3d37c739713da3e4af07dde87a70b005ed717cd2b5fbb8de81f36703f121cde.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i
-                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i
-                                        class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
-                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
-                            <div><p>21 000 Р</p></div>
-                            <i class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star_half</i><i
-                                class="material-icons yellow-text accent-2">star_border</i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl4 l6 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/ecdfbfbd335512d486d5c3cc419ae0f7f1449d0e8794e7a5e3b774c7d7a965be.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i
-                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i
-                                        class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                            <!--<a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
-                                        class="material-icons">add_shopping_cart</i></a>
-                            <a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
-                                        class="material-icons">favorite</i></a>-->
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
-                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
-                            <div><p>21 000 Р</p></div>
-                            <i class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star_half</i><i
-                                class="material-icons yellow-text accent-2">star_border</i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl4 l6 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/0dc9b2af17d9c12973e4c52fd41da32419f1736032d546f08823c8e1d6d6fc9a.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i
-                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i
-                                        class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
-                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
-                            <div><p>21 000 Р</p></div>
-                            <i class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star_half</i><i
-                                class="material-icons yellow-text accent-2">star_border</i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl4 l6 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/1d353d6dd1b08327d5d598c07ee1e7be58e6ea6bd3b406f1bb93b45188220751.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i
-                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i
-                                        class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
-                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
-                            <div><p>21 000 Р</p></div>
-                            <i class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star_half</i><i
-                                class="material-icons yellow-text accent-2">star_border</i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl4 l6 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/d3d37c739713da3e4af07dde87a70b005ed717cd2b5fbb8de81f36703f121cde.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i
-                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i
-                                        class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
-                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
-                            <div><p>21 000 Р</p></div>
-                            <i class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star_half</i><i
-                                class="material-icons yellow-text accent-2">star_border</i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl4 l6 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/ecdfbfbd335512d486d5c3cc419ae0f7f1449d0e8794e7a5e3b774c7d7a965be.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i
-                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i
-                                        class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                            <!--<a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
-                                        class="material-icons">add_shopping_cart</i></a>
-                            <a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i
-                                        class="material-icons">favorite</i></a>-->
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
-                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
-                            <div><p>21 000 Р</p></div>
-                            <i class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star_half</i><i
-                                class="material-icons yellow-text accent-2">star_border</i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl4 l6 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/0dc9b2af17d9c12973e4c52fd41da32419f1736032d546f08823c8e1d6d6fc9a.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i
-                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i
-                                        class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
-                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
-                            <div><p>21 000 Р</p></div>
-                            <i class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star_half</i><i
-                                class="material-icons yellow-text accent-2">star_border</i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl4 l6 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/1d353d6dd1b08327d5d598c07ee1e7be58e6ea6bd3b406f1bb93b45188220751.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i
-                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i
-                                        class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
-                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
-                            <div><p>21 000 Р</p></div>
-                            <i class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star_half</i><i
-                                class="material-icons yellow-text accent-2">star_border</i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 xl4 l6 m6">
-                    <div class="card hoverable">
-                        <div class="card-image center-align valign-wrapper">
-                            <img src="images/d3d37c739713da3e4af07dde87a70b005ed717cd2b5fbb8de81f36703f121cde.jpg">
-                            <div class="fixed-action-btn horizontal direction-top direction-left btn-not-fixed">
-
-                                <a class="btn-floating red" v-on:click="addToCart"><i
-                                        class="material-icons waves-effect waves-light">add_shopping_cart</i></a>
-                                <a class="btn-floating yellow darken-1"><i
-                                        class="material-icons waves-effect waves-light">favorite</i></a>
-
-
-                            </div>
-                        </div>
-                        <li class="divider" tabindex="-1"></li>
-                        <div class="card-content">
-                            <span>17.3" Ноутбук Lenovo Ideapad 330-17IKBR черный</span>
-                            <div class="ovh"><span class="new badge red white-text" data-badge-caption="">Новинка</span>
-                                <span class="new badge green white-text" data-badge-caption="">Акция</span></div>
-                            <div><p>21 000 Р</p></div>
-                            <i class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star</i><i
-                                class="material-icons yellow-text accent-2">star_half</i><i
-                                class="material-icons yellow-text accent-2">star_border</i>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="row center">
-                <a class="waves-effect waves-light btn-large red darken-4">
-                    <i class="material-icons right">add</i>Показать ещё
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="col xl3 show-on-large right-menu" style="display: none">
-        <!-- <div class="section">
-             <h5>&lt;!&ndash;<i class="material-icons left">
-                 category
-             </i>&ndash;&gt;Категории</h5>
-             <li class="divider red darken-4" tabindex="-1"></li>
-         </div>-->
-        <ul class="collapsible clm clpr red darken-4 white-text">
-            <li class="">
-                <div tabindex="0" class="collapsible-header"><i class="material-icons small right">arrow_right</i>Телефоны
-                </div>
-                <div class="collapsible-body" style="">
-                    <ul class="collapsible red darken-2">
-                        <li tabindex="-1" class="divider"></li>
-                        <li class="">
-                            <div tabindex="0" class="collapsible-header">
-                                Apple
-                            </div>
-                        </li>
-                        <li tabindex="-1" class="divider"></li>
-                        <li class="">
-                            <div tabindex="0" class="collapsible-header"><i class="material-icons small right">arrow_right</i>Sumsung
-                            </div>
-                            <div class="collapsible-body" style="">
-                                <ul class="collapsible red darken-2">
-                                    <li tabindex="-1" class="divider"></li>
-                                    <li class="">
-                                        <div class="collapsible-header" tabindex="0">
-                                            First
-                                        </div>
-                                    </li>
-                                    <li tabindex="-1" class="divider"></li>
-                                    <li class="">
-                                        <div class="collapsible-header" tabindex="0">
-                                            Second
-                                        </div>
-                                    </li>
-                                    <li tabindex="-1" class="divider"></li>
-                                    <li class="">
-                                        <div class="collapsible-header" tabindex="0"><i
-                                                class="material-icons small right">arrow_right</i>Third
-                                        </div>
-                                        <div class="collapsible-body" style="">
-                                            <ul class="collapsible red darken-2">
-                                                <li tabindex="-1" class="divider"></li>
-                                                <li class="">
-                                                    <div class="collapsible-header" tabindex="0">First
-                                                    </div>
-                                                </li>
-                                                <li tabindex="-1" class="divider"></li>
-                                                <li class="">
-                                                    <div class="collapsible-header" tabindex="0">Second
-                                                    </div>
-                                                </li>
-                                                <li tabindex="-1" class="divider"></li>
-                                                <li class="active">
-                                                    <div class="collapsible-header" tabindex="0">Third
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li tabindex="-1" class="divider"></li>
-                        <li>
-                            <div tabindex="0" class="collapsible-header">Xiaomi</div>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="divider" tabindex="-1"></li>
-
-            <li class="">
-                <div tabindex="0" class="collapsible-header"><i class="material-icons small right">arrow_right</i>Телефоны
-                </div>
-                <div class="collapsible-body" style="">
-                    <ul class="collapsible red darken-2">
-                        <li tabindex="-1" class="divider"></li>
-                        <li class="">
-                            <div tabindex="0" class="collapsible-header">
-                                Apple
-                            </div>
-                        </li>
-                        <li tabindex="-1" class="divider"></li>
-                        <li class="">
-                            <div tabindex="0" class="collapsible-header"><i class="material-icons small right">arrow_right</i>Sumsung
-                            </div>
-                            <div class="collapsible-body" style="">
-                                <ul class="collapsible red darken-2">
-                                    <li tabindex="-1" class="divider"></li>
-                                    <li class="">
-                                        <div class="collapsible-header" tabindex="0">
-                                            First
-                                        </div>
-                                    </li>
-                                    <li tabindex="-1" class="divider"></li>
-                                    <li class="">
-                                        <div class="collapsible-header" tabindex="0">
-                                            Second
-                                        </div>
-                                    </li>
-                                    <li tabindex="-1" class="divider"></li>
-                                    <li class="">
-                                        <div class="collapsible-header" tabindex="0"><i
-                                                class="material-icons small right">arrow_right</i>Third
-                                        </div>
-                                        <div class="collapsible-body" style="">
-                                            <ul class="collapsible red darken-2">
-                                                <li tabindex="-1" class="divider"></li>
-                                                <li class="">
-                                                    <div class="collapsible-header" tabindex="0">First
-                                                    </div>
-                                                </li>
-                                                <li tabindex="-1" class="divider"></li>
-                                                <li class="">
-                                                    <div class="collapsible-header" tabindex="0">Second
-                                                    </div>
-                                                </li>
-                                                <li tabindex="-1" class="divider"></li>
-                                                <li class="active">
-                                                    <div class="collapsible-header" tabindex="0">Third
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li tabindex="-1" class="divider"></li>
-                        <li>
-                            <div tabindex="0" class="collapsible-header">Xiaomi</div>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="divider" tabindex="-1"></li>
-            <li class="">
-                <div tabindex="0" class="collapsible-header"><i class="material-icons small right">arrow_right</i>Телефоны
-                </div>
-                <div class="collapsible-body" style="">
-                    <ul class="collapsible red darken-2">
-                        <li tabindex="-1" class="divider"></li>
-                        <li class="">
-                            <div tabindex="0" class="collapsible-header">
-                                Apple
-                            </div>
-                        </li>
-                        <li tabindex="-1" class="divider"></li>
-                        <li class="">
-                            <div tabindex="0" class="collapsible-header"><i class="material-icons small right">arrow_right</i>Sumsung
-                            </div>
-                            <div class="collapsible-body" style="">
-                                <ul class="collapsible red darken-2">
-                                    <li tabindex="-1" class="divider"></li>
-                                    <li class="">
-                                        <div class="collapsible-header" tabindex="0">
-                                            First
-                                        </div>
-                                    </li>
-                                    <li tabindex="-1" class="divider"></li>
-                                    <li class="">
-                                        <div class="collapsible-header" tabindex="0">
-                                            Second
-                                        </div>
-                                    </li>
-                                    <li tabindex="-1" class="divider"></li>
-                                    <li class="">
-                                        <div class="collapsible-header" tabindex="0"><i
-                                                class="material-icons small right">arrow_right</i>Third
-                                        </div>
-                                        <div class="collapsible-body" style="">
-                                            <ul class="collapsible red darken-2">
-                                                <li tabindex="-1" class="divider"></li>
-                                                <li class="">
-                                                    <div class="collapsible-header" tabindex="0">First
-                                                    </div>
-                                                </li>
-                                                <li tabindex="-1" class="divider"></li>
-                                                <li class="">
-                                                    <div class="collapsible-header" tabindex="0">Second
-                                                    </div>
-                                                </li>
-                                                <li tabindex="-1" class="divider"></li>
-                                                <li class="active">
-                                                    <div class="collapsible-header" tabindex="0">Third
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li tabindex="-1" class="divider"></li>
-                        <li>
-                            <div tabindex="0" class="collapsible-header">Xiaomi</div>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="divider" tabindex="-1"></li>
-            <li class="">
-                <div tabindex="0" class="collapsible-header"><i class="material-icons small right">arrow_right</i>Телефоны
-                </div>
-                <div class="collapsible-body" style="">
-                    <ul class="collapsible red darken-2">
-                        <li tabindex="-1" class="divider"></li>
-                        <li class="">
-                            <div tabindex="0" class="collapsible-header">
-                                Apple
-                            </div>
-                        </li>
-                        <li tabindex="-1" class="divider"></li>
-                        <li class="">
-                            <div tabindex="0" class="collapsible-header"><i class="material-icons small right">arrow_right</i>Sumsung
-                            </div>
-                            <div class="collapsible-body" style="">
-                                <ul class="collapsible red darken-2">
-                                    <li tabindex="-1" class="divider"></li>
-                                    <li class="">
-                                        <div class="collapsible-header" tabindex="0">
-                                            First
-                                        </div>
-                                    </li>
-                                    <li tabindex="-1" class="divider"></li>
-                                    <li class="">
-                                        <div class="collapsible-header" tabindex="0">
-                                            Second
-                                        </div>
-                                    </li>
-                                    <li tabindex="-1" class="divider"></li>
-                                    <li class="">
-                                        <div class="collapsible-header" tabindex="0"><i
-                                                class="material-icons small right">arrow_right</i>Third
-                                        </div>
-                                        <div class="collapsible-body" style="">
-                                            <ul class="collapsible red darken-2">
-                                                <li tabindex="-1" class="divider"></li>
-                                                <li class="">
-                                                    <div class="collapsible-header" tabindex="0">First
-                                                    </div>
-                                                </li>
-                                                <li tabindex="-1" class="divider"></li>
-                                                <li class="">
-                                                    <div class="collapsible-header" tabindex="0">Second
-                                                    </div>
-                                                </li>
-                                                <li tabindex="-1" class="divider"></li>
-                                                <li class="active">
-                                                    <div class="collapsible-header" tabindex="0">Third
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li tabindex="-1" class="divider"></li>
-                        <li>
-                            <div tabindex="0" class="collapsible-header">Xiaomi</div>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="divider" tabindex="-1"></li>
-            <li class="">
-                <div tabindex="0" class="collapsible-header"><i class="material-icons small right">arrow_right</i>Телефоны
-                </div>
-                <div class="collapsible-body" style="">
-                    <ul class="collapsible red darken-2">
-                        <li tabindex="-1" class="divider"></li>
-                        <li class="">
-                            <div tabindex="0" class="collapsible-header">
-                                Apple
-                            </div>
-                        </li>
-                        <li tabindex="-1" class="divider"></li>
-                        <li class="">
-                            <div tabindex="0" class="collapsible-header"><i class="material-icons small right">arrow_right</i>Sumsung
-                            </div>
-                            <div class="collapsible-body" style="">
-                                <ul class="collapsible red darken-2">
-                                    <li tabindex="-1" class="divider"></li>
-                                    <li class="">
-                                        <div class="collapsible-header" tabindex="0">
-                                            First
-                                        </div>
-                                    </li>
-                                    <li tabindex="-1" class="divider"></li>
-                                    <li class="">
-                                        <div class="collapsible-header" tabindex="0">
-                                            Second
-                                        </div>
-                                    </li>
-                                    <li tabindex="-1" class="divider"></li>
-                                    <li class="">
-                                        <div class="collapsible-header" tabindex="0"><i
-                                                class="material-icons small right">arrow_right</i>Third
-                                        </div>
-                                        <div class="collapsible-body" style="">
-                                            <ul class="collapsible red darken-2">
-                                                <li tabindex="-1" class="divider"></li>
-                                                <li class="">
-                                                    <div class="collapsible-header" tabindex="0">First
-                                                    </div>
-                                                </li>
-                                                <li tabindex="-1" class="divider"></li>
-                                                <li class="">
-                                                    <div class="collapsible-header" tabindex="0">Second
-                                                    </div>
-                                                </li>
-                                                <li tabindex="-1" class="divider"></li>
-                                                <li class="active">
-                                                    <div class="collapsible-header" tabindex="0">Third
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li tabindex="-1" class="divider"></li>
-                        <li>
-                            <div tabindex="0" class="collapsible-header">Xiaomi</div>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="divider" tabindex="-1"></li>
-        </ul>
-    </div>
-
-</div>
-
-<div class="container">
-    <div class="section">
-        <div class="row center">&nbsp;</div>
-    </div>
-</div>
-
-
-<footer class="page-footer red darken-4">
-    <div class="container">
-        <div class="row">
-            <div class="col l6 s12">
-                <h5 class="white-text">El-Shop</h5>
-                <p class="grey-text text-lighten-4">Какой нибудь крутой текст</p>
-            </div>
-            <div class="col l3 s12">
-                <h5 class="white-text">Меню</h5>
+            <div class="portfolio-menu__items">
                 <ul>
-                    <li><a class="white-text" href="#">El-Shop</a></li>
-                    <!--<li><a class="white-text" href="#">Список мест</a></li>
-                    <li><a class="white-text" href="#">Рейтинги</a></li>
-                    <li><a class="white-text" href="#">О нас</a></li>
-                    <li><a class="white-text" href="#">Пользовательское соглашение</a></li>-->
+                    <li><a href="#" data-filter="all" class="active">all</a></li>
+                    <li><a href="#" data-filter="illustration">Illustration</a></li>
+                    <li><a href="#" data-filter="digitalart">Digital Art</a></li>
+                    <li><a href="#" data-filter="webdesign">Web design</a></li>
                 </ul>
             </div>
         </div>
-        <div class="footer-copyright">
-            <div class="container">
-                Made for <a class="brown-text text-lighten-3" href="http://ff.com">El-Shop</a>
-            </div>
+        <div class="portfolio-items">
+            <a style="width: 28.560%;" class="portfolio__item" data-filter="digitalart">
+                <div class="item-overlay">
+                    <div class="item-overlay-info">
+                        <img src="img/plus.png">
+                        <span class="item-overlay-info__project-name">design name</span>
+                    </div>
+                </div>
+                <img class="portfolio-items__main-img" src="img/1.png" alt="">
+            </a>
+            <a style="width: 21.429%;" class="portfolio__item" data-filter="webdesign">
+                <div class="item-overlay">
+                    <div class="item-overlay-info">
+                        <img src="img/plus.png">
+                        <span class="item-overlay-info__project-name">design name</span>
+                    </div>
+                </div>
+                <img class="portfolio-items__main-img" src="img/2.png" alt="">
+            </a>
+            <a style="width: 28.560%;" class="portfolio__item" data-filter="illustration">
+                <div class="item-overlay">
+                    <div class="item-overlay-info">
+                        <img src="img/plus.png">
+                        <span class="item-overlay-info__project-name">design name</span>
+                    </div>
+                </div>
+                <img class="portfolio-items__main-img" src="img/3.png" alt="">
+            </a>
+            <a style="width: 21.429%;" class="portfolio__item" data-filter="illustration">
+                <div class="item-overlay">
+                    <div class="item-overlay-info">
+                        <img src="img/plus.png">
+                        <span class="item-overlay-info__project-name">design name</span>
+                    </div>
+                </div>
+                <img class="portfolio-items__main-img" src="img/4.png" alt="">
+            </a>
+            <a style="width: 21.429%;" class="portfolio__item" data-filter="webdesign">
+                <div class="item-overlay">
+                    <div class="item-overlay-info">
+                        <img src="img/plus.png">
+                        <span class="item-overlay-info__project-name">design name</span>
+                    </div>
+                </div>
+                <img class="portfolio-items__main-img" src="img/5.png" alt="">
+            </a>
+            <a style="width: 28.571%;" class="portfolio__item" data-filter="digitalart">
+                <div class="item-overlay">
+                    <div class="item-overlay-info">
+                        <img src="img/plus.png">
+                        <span class="item-overlay-info__project-name">design name</span>
+                    </div>
+                </div>
+                <img class="portfolio-items__main-img" src="img/6.png" alt="">
+            </a>
+            <a style="width: 21.429%;" class="portfolio__item" data-filter="webdesign">
+                <div class="item-overlay">
+                    <div class="item-overlay-info">
+                        <img src="img/plus.png">
+                        <span class="item-overlay-info__project-name">design name</span>
+                    </div>
+                </div>
+                <img class="portfolio-items__main-img" src="img/7.png" alt="">
+            </a>
+            <a style="width: 28.571%;" class="portfolio__item" data-filter="illustration">
+                <div class="item-overlay">
+                    <div class="item-overlay-info">
+                        <img src="img/plus.png">
+                        <span class="item-overlay-info__project-name">design name</span>
+                    </div>
+                </div>
+                <img class="portfolio-items__main-img" src="img/8.png" alt=""></a>
         </div>
     </div>
-</footer>
-
-
-<!-- Tap Target Structure -->
-
-<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-<!--  Scripts-->
-<!--<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>-->
-
-
-<!-- Compiled and minified JavaScript -->
-<script src="js/materialize.min.js"></script>
-
-<script src="js/init.js"></script>
-<!--
-<div class="fixed-action-btn test hide-on-small-only">
-    <a id="menu1" class="btn btn-floating btn-large red darken-4">
-        <i class="material-icons">chat_bubble</i>
-    </a>
 </div>
 
-<div class="tap-target-wrapper hide-on-small-only">
-    <div class="tap-target red darken-4" data-target="menu">
-        <div class="tap-target-content white-text center">
-            <div class="container">
-                <div class="section">
-                    <div class="row center">&nbsp;</div>
-                </div>
-            </div>
-            <h5>Связаться с нами</h5>
-
-            <form class="container">
-                <div class="input-field white-text">
-                    <input id="email" type="email" class="validate white-text">
-                    <label for="email" class="white-text">Email</label>
-                </div>
-                <div class="input-field white-text">
-                    <textarea id="textarea" class="materialize-textarea white-text"></textarea>
-                    <label for="textarea" class="white-text">Сообщение</label>
-                </div>
-
-                <div class="row center white-text">
-
-
-                    <button class="btn waves-effect waves-light red darken-4" type="submit" name="action">Отправить
-                    </button>
-                </div>
-
-
-            </form>
-        </div>
-    </div>
-    <div class="tap-target-wave"><a class="btn btn-floating btn-large cyan tap-target-origin">
-        <i class="material-icons">chat_bubble</i>
-    </a></div>
-</div>-->
-
-<!--<div class="fixed-action-btn test hide-on-small-only" id="app">
-
-    <a id="menu1" class="btn btn-floating btn-large red darken-4" v-on:click="openTapTarget">
-
-        <i class="material-icons">chat_bubble</i>
-    </a>
-</div>
-
-<div class="tap-target-wrapper hide-on-small-only">
-    <div class="tap-target red darken-4" data-target="menu1">
-        <div class="tap-target-content white-text center">
-            <div class="container">
-                <div class="section">
-                    <div class="row center">&nbsp;</div>
-                </div>
-            </div>
-            <h5>Связаться с нами</h5>
-
-            <form class="container">
-                <div class="input-field white-text">
-                    <input id="email" type="email" class="validate white-text">
-                    <label for="email" class="white-text">Email</label>
-                </div>
-                <div class="input-field white-text">
-                    <textarea id="textarea" class="materialize-textarea white-text"></textarea>
-                    <label for="textarea" class="white-text">Сообщение</label>
-                </div>
-
-                <div class="row center white-text">
-
-
-                    <button class="btn waves-effect waves-light red darken-4" type="submit" name="action">Отправить
-                    </button>
-                </div>
-
-
-            </form>
-        </div>
-    </div>
-    <div class="tap-target-wave"><a class="btn btn-floating btn-large cyan tap-target-origin">
-        <i class="material-icons">chat_bubble</i>
-    </a></div>
-</div>-->
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-<script>
-    var addCart = new Vue({
-        el: '#app',
-        data: {
-            cart_items: 0,
-            toastHTML: 'Добавлено в корзину',
-
-        },
-        computed: {},
-        methods: {
-            addToCart: function () {
-                M.toast({html: this.toastHTML, classes: "redToast"});
-                this.cart_items++;
-                header.cart_items = this.cart_items;
-            },
-            addProducts: function () {
-
-            }
-        }
-    });
-
-    var header = new Vue({
-        el: '#header',
-        data: {
-            cart_items: 0
-        },
-        computed: {},
-        methods: {}
-    });
-
-
-</script>
 </body>
+<script defer src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var multiItemSlider = (function () {
+            'use strict';
+            return function (selector, config) {
+                var
+                    _mainElement = $(selector), // основный элемент блока
+                    _config = {
+                        _sliderItems: _mainElement.find('.portfolio__item'),
+                        _sliderControls: _mainElement.find('.portfolio-menu__items ul li a'),
+                    };
+
+                for (var key in config) {
+                    if (key in _config) {
+                        _config[key] = config[key];
+                    }
+                }
+
+                console.log(_config);
+                var _controlClick = function (e) {
+                    var p_item = $(this);
+                    _config._sliderControls.removeClass('active');
+                    p_item.addClass('active');
+                    var filter = p_item.data('filter');
+                    var arrVis = [], arrHid = [];
+
+                    if (filter === 'all') {
+                        _config._sliderItems.show(300);
+                    } else {
+                        $.each(_config._sliderItems, function (key, value) {
+                            if ($(value).data('filter') === filter) {
+                                arrVis.push(value);
+
+                            } else {
+                                arrHid.push(value);
+                            }
+                        });
+
+                        $(arrHid).hide(300);
+                        $(arrVis).show(300);
+                    }
+                    return false;
+                };
+
+                var _setUpListeners = function () {
+                    // добавление к переключателям обработчика _controlClick для события click
+                    _config._sliderControls.on('click', _controlClick);
+                };
+                // инициализация
+                _setUpListeners();
+            }
+        }());
+
+        multiItemSlider('.portfolio');
+
+    });
+</script>
 </html>
