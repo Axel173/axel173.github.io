@@ -1,0 +1,20 @@
+
+; /* Start:"a:4:{s:4:"full";s:120:"/local/templates/.default/components/bitrix/catalog/catalog/bitrix/catalog.section.list/.default/script.js?1510315260331";s:6:"source";s:106:"/local/templates/.default/components/bitrix/catalog/catalog/bitrix/catalog.section.list/.default/script.js";s:3:"min";s:0:"";s:3:"map";s:0:"";}"*/
+$(document).ready(function()
+{
+	$('.product_section_menu_more').click(function()
+	{
+		$(this).parent('.product_section_menu').toggleClass('open');
+		if ($(this).children('span').html()=="+")
+		{
+			$(this).children('span').html('-');
+		}
+		else
+		{
+			$(this).children('span').html('+');
+		}
+		return false;
+	});
+});
+/* End */
+;; /* /local/templates/.default/components/bitrix/catalog/catalog/bitrix/catalog.section.list/.default/script.js?1510315260331*/
