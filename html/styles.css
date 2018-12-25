@@ -2,7 +2,7 @@
      margin: 0 0 15px 0;
 }
  .section_item_wrapper.active {
-     margin: 0;
+     /*margin: 0;*/
 }
  .section_item_wrapper .product_section_menu {
      display: none;
@@ -91,6 +91,34 @@
     /* IE 6-9 */
 }
 
+ .catalog_section_item.disable .product_section_name > div a:hover  
+{
+    color: white;
+}
+
+ .catalog_section_item.disable .product_section_name:hover  
+{
+    background: #ef6c00;
+}
+.catalog_section_item.disable .product_section_name:hover::after
+{
+    background: #ef6c00;
+}
+
+.catalog_section_item.disable .product_section_name:hover::before
+{
+    background: #ef6c00;
+}
+
+.catalog_section_item.disable .product_section_pic:hover, .catalog_section_item:not(.disable) .product_section_pic
+{
+    border: #ef6c00 1px solid;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
 .tech_catalog_item
 {
     vertical-align: top;
@@ -134,6 +162,38 @@
 {
     opacity: 1;
 }
+
+.uaz_head_not_selected
+{
+    background: #eaeaea;
+}
+
+.uaz_head_not_selected > div a:not(:hover), .uaz_head_not_selected > div a:not(:hover)::before
+{
+    color: black;
+}
+
+.uaz_head_not_selected > div a:not(:hover)::before
+{
+    border-bottom: black 1px dashed;
+}
+
+.uaz_head_not_selected > div a:not(:hover)::after
+{
+    border-top: 6px solid black;
+}
+
+.uaz_head_not_selected::before 
+{
+    content: none;
+}
+
+.uaz_head_not_selected::after
+{
+    background: #eaeaea;
+}
+
+
 
 .tech_catalog_item:hover
 {
@@ -183,9 +243,9 @@
 }
 
  @media (min-width: 768px){
-     .catalog_section_item:hover {
+     /*.catalog_section_item:hover {
          border: #b1b0b0 1px solid;
-    }
+    }*/
 }
  @media (max-width: 500px){
      .catalog_section_item {
