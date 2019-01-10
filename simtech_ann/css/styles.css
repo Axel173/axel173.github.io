@@ -102,6 +102,7 @@ main {
 }
 
 .product-card-photo__img {
+    width: 100%;
 }
 
 .product-card-info {
@@ -290,6 +291,7 @@ main {
 
 .other-products__products-items__item__img {
     margin: 0 0 40px 0;
+    width: 100%;
 }
 
 .other-products__products-items__item__name {
